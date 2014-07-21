@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo</title>
+	<link rel="stylesheet" href="sample.css" />
+	<link rel="stylesheet" href="jquery.simpleprogress.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="jquery.simpleprogress.js"></script>
+	<script>
+		var percent = 0;
+		$(document).ready(function () {
+			$(".progress").simpleprogress();
+			$("#clicker").click(function () {
+				percent = Math.min(percent + 15, 100);
+				$(".progress").simpleprogress("update", percent);
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div id="progress1" class="progress no-text"></div>
+		<div id="progress2" class="progress"></div>
+		<a id="clicker" href="#">Click me</a>
+	</div>
+</body>
+</html>

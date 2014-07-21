@@ -1,0 +1,21 @@
+.simple-progress {
+	border: 1px solid #111;
+	background-color: #292929;
+	border-radius: 10px;
+	padding: 5px;
+	box-shadow: 0 2px 3px #333;
+}
+.simple-progress .simple-progress-inner {
+	height: 100%;
+	color: #fff;
+	text-align: right;
+	line-height: 22px; /* same as #progressBar height if we want text middle aligned */
+	width: 0;
+	background-color: darkblue;
+	border-radius: 6px;
+	box-shadow: 0 5px 5px #ccc inset;
+	overflow: hidden;
+}
+.simple-progress.no-text .simple-progress-inner {
+	text-indent: 99999px;
+}
